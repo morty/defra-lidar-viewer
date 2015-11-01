@@ -103,7 +103,7 @@
 
     $.getJSON( "data_dict.json", function( data ) {
         outside_data = data
-        var options = '';
+        var options = '<option>Please select a grid square</option>';
         $.each(data, function(key, item){options += '<option value="'+ key +'">' + key + ' - ' + item.name + '</option>';})
         $("#os-grid").html(options);
     });
